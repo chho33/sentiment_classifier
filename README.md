@@ -5,8 +5,9 @@
 - Please download the trained model and put them into correct directory manually as below:
 > [sentiment model](https://drive.google.com/open?id=112GPe7_tIoqKQwcgiXBgh6FeFPn7-ZK8) 
 ```
-mv Model07.tar.gz evaluation_kit/saved_models/entiment_analysis/;
-cd evaluation_kit/saved_models/sentiment_analysis;
+mkdir saved_models
+mv Model07.tar.gz saved_models;
+cd saved_models;
 tar zxf Model07.tar.gz; rm Model07.tar.gz;
 ```
 - Prepare a file we want to evaluate as the format in `data/test.csv`, and put it in the `data` directory. *the file must contain the "utterance" header. 
